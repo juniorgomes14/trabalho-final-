@@ -1,0 +1,494 @@
+                                                                            /*1-Estilos gerais*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    
+}
+
+
+body{
+    background-color:rgb(2, 2, 3);
+    height: 100vh;
+    
+     
+}
+
+.hover  :hover{
+    transform: scale(1.1);
+    color: #fff;
+    transition: .2s;
+    
+}
+
+
+
+.flex{
+    display: flex;
+}
+
+
+header span{
+    color: #00FF08;
+}
+
+
+.center{
+    display: flex;
+    justify-content: center;
+    font-size: 38px;
+}
+
+
+.color{
+    color: white;
+}
+
+
+.button{
+    background-color: rgb(41, 196, 41);
+    border: 0px ;
+    border-radius: 30px;
+    cursor: pointer;
+    
+    padding: 10px 40px;
+
+}
+
+
+.button:hover::before{
+    width: 1000px;
+    height: 1000px;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+
+
+                                                                             /*2-Menu*/
+
+                                                                             
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+
+}
+
+
+ header {
+    padding: 40px 4%;
+    margin-bottom: 80px;
+ }     
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+
+nav ul li{
+    list-style-type: none;
+    margin: 0px 23px;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #5c5c5c;
+    transition: .2s;
+    
+}
+
+
+.texto{
+
+    font-size: 135px;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #00FF08, #321d1d, #676767,#13edd7);
+    background-size: 400% 100%;
+    animation: gradiente 10s linear infinite alternate;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    outline: none;
+    
+}
+
+
+@keyframes gradiente {
+    0%{
+        background-position-x: 0%;
+    }
+
+    100%{
+        background-position: 400%;
+    }
+}
+
+
+
+                                                                 /*3-hero sectiion*/
+
+
+
+.left{
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+#h1{
+        font-size: 40px;
+    line-height: 40px;
+
+}
+
+section.firstSection{
+    padding: 40px 4%;
+  
+}
+
+.button a{
+    text-decoration: none;
+    color: #000;
+}
+
+.left span{
+
+    color: rgb(41, 196, 41);
+}
+
+ .firstSection .interface .flex{
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    margin: 60px 0px;
+}
+
+.firstSection h1{
+    color: white;
+    font-size: 38px;
+    line-height: 40px;
+    margin-bottom: 40px;
+}
+
+.firstSection p{
+    margin-bottom: 40px;
+}
+
+.firstSection .img-top img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    0%{
+        top:0px;
+    }
+    100%{
+        top:30px;
+    }
+}
+
+
+
+                                                             /*4-Service Section*/
+
+
+
+section.service {
+    padding: 40px 4%;
+    
+}
+
+section.service .flex {
+    gap: 60px;
+}
+
+.service .service-box {
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+}
+
+.service .service-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ffffff78;
+}
+
+.service .service-box i {
+    font-size: 70px;
+    color: #00FF08;
+}
+
+.service .service-box h3 {
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+
+
+                                                                  /*5-portofolio Section*/
+
+
+
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+
+.flip-card {
+    background-color: transparent;
+    width: 350px;
+    height: 300px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+
+  /* Style the back side */
+  .flip-card-back {
+    
+    color: white;
+    transform: rotateY(180deg);
+
+}
+
+.portofolio .flex{
+    flex-direction: row;
+    
+}
+
+
+                                                          /*6-About Section */
+
+
+
+section.sobre {
+    padding: 80px 4%;
+    margin-bottom: 120px;
+}
+
+section.sobre .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre {
+    color: #fff;
+}
+
+.sobre .txt-sobre h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span {
+    color: #00FF08;
+    display: block;
+}
+
+.sobre .txt-sobre p {
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.btn-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #00FF08;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+
+
+
+                                               
+
+
+                                                /*7-description*/
+
+#description{
+    margin-top: 90px;
+} 
+.description table tr td{
+    display: flex;
+    justify-content: center;
+}                                           
+#table{
+    width: 900px;
+    height: 400px;
+    font-size: 38px;
+}
+table, th, td {
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+
+                                                /* 9-Contact Section*/
+
+
+section.formulario {
+    padding: 80px 4%;
+}
+
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    background-color: #242424;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+}
+
+form textarea {
+    resize: none;
+    max-height: 200px;
+}
+
+form .btn-enviar {
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input {
+    width: 120px;
+    background-color: #00FF08;
+    color: #000;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.formulario span{
+   color: #00FF08;
+}
+
+.video{
+    box-shadow: 0 0 40px 10px #ffffff1d;
+    border: 15px;
+}
+
+
+                                                            /*10- RODAPÉ */
+
+
+footer{
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+  
+}
+
+footer span{
+    font-size: 24px;
+    color: #00FF08;
+}
+
+.div-1{
+    margin-right: 80px;
+}
+
+
+.div-2{
+    display: flex;
+    flex-direction: column;
+    margin-right: 80px;
+    
+}
+
+.div-2 a{
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.div-3{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+   
+}
+
+.div-3 a{
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+}
+
+footer a:hover{
+    transform: scale(1.1);
+    color: #fff;
+    transition: .2s;
+}
+
+
+.center-2{
+    justify-content: center;
+}
+
+                                                        /*11-javascript*/
+.error-message{
+    color: #00FF08;
+}
